@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-brand: #fdb813;
+  --color-brand-dark: #e6a30a;
+  --color-ink: #2e2e2e;
+  --color-ink-soft: #3a3a3a;
+  --color-muted: #6f6f6f;
+  --color-surface: #f6f6f6;
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+body {
+  color: var(--color-ink);
+  background: #fff;
+  font-family: var(--font-sans);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
