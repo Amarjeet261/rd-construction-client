@@ -19,7 +19,7 @@ export const AboutIntro = () => (
   <section id="about" className="relative z-10 mx-auto -mt-10 max-w-6xl bg-white px-4 pt-12 pb-16 shadow-sm">
     <SectionHeader
       title="We Are RD Construction"
-      subtitle="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+      subtitle="Where premium marble meets precision craftsmanship, we create timeless spaces built to impress and last. From hand-picked slabs to a mirror-smooth finish, every floor, wall and staircase is planned, cut and fitted by our skilled team with complete care and honesty."
     />
     <div className="mt-10 grid gap-px md:grid-cols-2">
       {features.map((feature, index) => (

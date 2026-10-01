@@ -20,25 +20,25 @@ export const navItems = [
   { label: "Contact Us", href: "#contact" },
 ];
 
-export const loremShort =
-  "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
-export const loremLong =
-  "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.";
+export const marbleShort =
+  "Premium Italian and Indian marble, hand-selected and installed with precision for a flawless finish.";
+export const marbleLong =
+  "From Makrana white to Statuario veining, choosing the right marble transforms a plain room into a timeless statement of luxury.";
 
 export const features = [
-  { title: "Quality Work", text: loremShort, image: "/img7.jpeg" },
-  { title: "Trusted Worker", text: loremShort, image: "/img8.jpeg" },
-  { title: "Heavy Materials", text: loremShort, image: "/img9.jpeg" },
-  { title: "Expert Engineer", text: loremShort, image: "/img10.jpeg" },
+  { title: "Flawless Finish", text: "Mirror-polished marble surfaces with seamless joints and consistent veining.", image: "/img7.jpeg" },
+  { title: "Skilled Artisans", text: "Experienced craftsmen who cut, fit and polish every slab by hand.", image: "/img8.jpeg" },
+  { title: "Premium Stone", text: "Hand-picked Makrana, Statuario and Onyx slabs from trusted quarries.", image: "/img9.jpeg" },
+  { title: "Precision Fitting", text: "Accurate measurement and installation so every edge lines up perfectly.", image: "/img10.jpeg" },
 ];
 
 export const services = [
-  { title: "Architecture", text: loremShort },
-  { title: "Isolation", text: loremShort },
-  { title: "Renovation", text: loremShort },
-  { title: "Maintenance", text: loremShort },
-  { title: "Architecture", text: loremShort },
-  { title: "Isolation", text: loremShort },
+  { title: "Marble Flooring", text: "Elegant polished marble floors for homes, offices and showrooms." },
+  { title: "Wall Cladding", text: "Book-matched marble panels that give feature walls a luxurious look." },
+  { title: "Kitchen Countertops", text: "Durable, stain-resistant marble and granite tops cut to your layout." },
+  { title: "Staircase & Steps", text: "Slip-safe marble treads and risers finished with clean, sharp edges." },
+  { title: "Polishing & Restoration", text: "Diamond polishing that brings dull, scratched marble back to a mirror shine." },
+  { title: "Custom Inlay Work", text: "Intricate marble inlay, borders and medallions designed to your taste." },
 ];
 
 export const projectCategories = [
@@ -70,17 +70,22 @@ export const team = [
 ];
 
 export const posts = [
-  { title: "Blog Headline", date: "21 Feb, 2015", text: loremLong, image: "/img11.jpeg" },
-  { title: "Blog Headline", date: "21 Feb, 2015", text: loremLong, image: "/img12.jpeg" },
-  { title: "Blog Headline", date: "21 Feb, 2015", text: loremLong, image: "/img13.jpeg" },
+  { title: "How to Choose the Right Marble", date: "21 Feb, 2025", text: marbleLong, image: "/img11.jpeg" },
+  { title: "Marble Care & Maintenance Tips", date: "14 Mar, 2025", text: "Simple daily habits and the right cleaners keep marble glossy and stain-free for years.", image: "/img12.jpeg" },
+  { title: "Italian vs Indian Marble", date: "02 Apr, 2025", text: "A practical comparison of cost, durability and look to help you pick the best stone.", image: "/img13.jpeg" },
 ];
 
-const testimonialText =
-  "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage.";
-
 export const testimonials = [
-  { text: testimonialText, author: "Grey White", role: "CEO/Google Inc" },
-  { text: testimonialText, author: "Grey White", role: "CEO/Google Inc" },
+  {
+    text: "RD Construction laid beautiful white marble across our entire home. The finish is flawless, the team was punctual, and the quality of the stone exceeded our expectations.",
+    author: "Rohit Sharma",
+    role: "Homeowner, Delhi",
+  },
+  {
+    text: "Our showroom floor looks stunning. The marble polishing and fitting were handled with great precision and finished well ahead of schedule.",
+    author: "Neha Verma",
+    role: "Showroom Owner",
+  },
 ];
 
 export const clientLogos = [
@@ -94,9 +99,9 @@ export const clientLogos = [
 export const footerTags = ["House", "School", "Mall", "Flat", "Architecture", "Bridge", "Interior"];
 
 export const tweets = [
-  "Very lovely design seen: http://themeforest.net/",
-  "Very lovely design seen: http://themeforest.net/",
-  "Very lovely design seen: http://themeforest.net/",
+  "New arrival: Statuario white marble slabs now in stock.",
+  "Tip: reseal your marble every 6-12 months to keep it stain-free.",
+  "Another mirror-finish marble floor completed. See our gallery!",
 ];
 
 export const heroImage = "/img3.jpeg";

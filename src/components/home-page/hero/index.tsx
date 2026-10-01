@@ -9,15 +9,15 @@ import { SliderDots } from "@/components/ui/SliderDots";
 const slides = [
   {
     title: ["MAKE YOUR", "DREAM TRUE WITH US"],
-    text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
+    text: "Premium marble flooring, cladding and finishing crafted with precision for homes and businesses.",
   },
   {
     title: ["BUILD YOUR", "FUTURE WITH US"],
-    text: "Quality construction and expert engineering delivered on time, every time.",
+    text: "Hand-picked marble slabs, expert fitting and a mirror finish delivered on time, every time.",
   },
   {
     title: ["TRUSTED BUILDERS,", "RD CONSTRUCTION"],
-    text: "Decades of experience turning blueprints into lasting structures.",
+    text: "Years of craftsmanship turning raw stone into timeless, elegant spaces.",
   },
 ];
 

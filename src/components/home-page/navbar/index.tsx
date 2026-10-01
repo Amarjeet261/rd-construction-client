@@ -6,6 +6,7 @@ import { contact, navItems } from "@/utils/data/content";
 
 const telHref = `tel:${contact.phone.replace(/\s/g, "")}`;
 const whatsappHref = `https://wa.me/${contact.whatsapp}`;
+const SCROLL_SPY_OFFSET = 120;
 
 const Logo = () => (
   <a href="#home" className="py-4 text-lg font-extrabold tracking-widest text-ink">
@@ -30,10 +31,31 @@ export const Navbar = () => {
     };
   }, [open]);
 
-  const selectItem = (href: string) => {
-    setActive(href);
-    setOpen(false);
-  };
+  // Scroll-spy: highlight the last section whose top has passed just under the sticky navbar.
+  useEffect(() => {
+    const sections = navItems
+      .map((item) => document.querySelector<HTMLElement>(item.href))
+      .filter((section): section is HTMLElement => section !== null);
+
+    const updateActive = () => {
+      const line = SCROLL_SPY_OFFSET;
+      const atPageBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+      const current = atPageBottom
+        ? sections[sections.length - 1]
+        : sections.filter((section) => section.getBoundingClientRect().top <= line).at(-1) ?? sections[0];
+      if (current) setActive(`#${current.id}`);
+    };
+
+    updateActive();
+    window.addEventListener("scroll", updateActive, { passive: true });
+    window.addEventListener("resize", updateActive);
+    return () => {
+      window.removeEventListener("scroll", updateActive);
+      window.removeEventListener("resize", updateActive);
+    };
+  }, []);
+
+  const closeMenu = () => setOpen(false);
 
   return (
     <nav className="sticky top-0 z-60 bg-white shadow-md">
@@ -46,7 +68,6 @@ export const Navbar = () => {
             <li key={item.label}>
               <a
                 href={item.href}
-                onClick={() => setActive(item.href)}
                 className={`block px-4 py-5 text-[10px] font-semibold uppercase tracking-wide transition-colors ${active === item.href ? "bg-brand text-white" : "hover:text-brand"}`}
               >
                 {item.label}
@@ -115,7 +136,7 @@ export const Navbar = () => {
             <li key={item.label}>
               <a
                 href={item.href}
-                onClick={() => selectItem(item.href)}
+                onClick={closeMenu}
                 className={`block rounded-2xl px-5 py-4 text-base font-semibold transition-colors ${active === item.href ? "bg-brand/15 text-ink" : "text-ink-soft hover:bg-surface"}`}
               >
                 {item.label}

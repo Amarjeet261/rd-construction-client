@@ -1,4 +1,4 @@
-import { loremShort, services, servicesImage } from "@/utils/data/content";
+import { marbleShort, services, servicesImage } from "@/utils/data/content";
 import { Photo } from "@/components/ui/Photo";
 
 const ServiceCard = ({ title, text }: { title: string; text: string }) => (
@@ -31,7 +31,7 @@ export const ServicesSection = () => (
             Service
           </h2>
           <p className="border-l-2 border-brand pl-4 text-xs leading-relaxed text-muted">
-            {loremShort} Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
+            {marbleShort} Every project is finished to last for generations.
           </p>
         </div>
         <div className="grid gap-px sm:grid-cols-2">

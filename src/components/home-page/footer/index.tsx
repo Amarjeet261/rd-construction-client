@@ -1,6 +1,6 @@
 import { Icon, type IconName } from "@/components/ui/Icons";
 import { Photo } from "@/components/ui/Photo";
-import { contact, footerTags, galleryImages, loremShort, tweets } from "@/utils/data/content";
+import { contact, footerTags, galleryImages, marbleShort, tweets } from "@/utils/data/content";
 
 const followLinks: { label: string; icon: IconName; href: string; color: string }[] = [
   { label: "Instagram", icon: "instagram", href: "https://www.instagram.com/rdconstructionss", color: "text-pink-500" },
@@ -27,7 +27,7 @@ export const Footer = () => (
     <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:grid-cols-2 lg:grid-cols-4">
       <div>
         <Heading>About Us</Heading>
-        <p>{loremShort} Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.</p>
+        <p>{marbleShort} Every project is finished to last for generations.</p>
 
         <h3 className="mt-8 mb-4 text-base font-bold normal-case text-white">Follow Us</h3>
         <ul className="flex gap-3">
@@ -59,7 +59,7 @@ export const Footer = () => (
       </div>
 
       <div>
-        <Heading>Twitter Feeds</Heading>
+        <Heading>Latest Updates</Heading>
         <ul className="space-y-4">
           {tweets.map((tweet, index) => (
             <li key={index} className="flex gap-3">
