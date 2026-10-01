@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
+import { heroImage } from "@/utils/data/content";
 import { Button } from "@/components/ui/Button";
 import { SliderDots } from "@/components/ui/SliderDots";
 
@@ -25,8 +27,8 @@ export const HeroSection = () => {
 
   return (
     <section id="home" className="relative -mt-[58px] flex min-h-[560px] items-center bg-gradient-to-br from-slate-500 to-slate-700 pt-28 pb-24 md:min-h-[640px]">
-      {/* HeroBackground: swap this gradient for a background image later */}
-      <div aria-hidden className="absolute inset-0 bg-black/20" />
+      <Image src={heroImage} alt="" fill priority sizes="100vw" className="object-cover" />
+      <div aria-hidden className="absolute inset-0 bg-black/50" />
       <div className="relative mx-auto w-full max-w-6xl px-4">
         <div className="max-w-xl">
           <h1 className="space-y-2 text-2xl font-extrabold text-white sm:text-3xl">

@@ -1,4 +1,4 @@
-import { loremShort, services } from "@/utils/data/content";
+import { loremShort, services, servicesImage } from "@/utils/data/content";
 import { Photo } from "@/components/ui/Photo";
 
 const ServiceCard = ({ title, text }: { title: string; text: string }) => (
@@ -22,7 +22,7 @@ const ServiceCard = ({ title, text }: { title: string; text: string }) => (
 export const ServicesSection = () => (
   <section id="services" className="bg-surface">
     <div className="mx-auto grid max-w-6xl items-end gap-8 px-4 pt-16 lg:grid-cols-[2fr_3fr]">
-      <Photo alt="RD Construction worker with tools" className="hidden min-h-[480px] lg:block" />
+      <Photo src={servicesImage} alt="RD Construction worker with tools" className="hidden min-h-[480px] lg:block" />
       <div className="pb-16">
         <div className="mb-8 flex items-start gap-4">
           <h2 className="text-xl font-extrabold uppercase leading-tight">

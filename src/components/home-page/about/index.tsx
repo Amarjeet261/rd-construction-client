@@ -2,9 +2,9 @@ import { features } from "@/utils/data/content";
 import { Photo } from "@/components/ui/Photo";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 
-const FeatureCard = ({ title, text, imageFirst }: { title: string; text: string; imageFirst: boolean }) => (
+const FeatureCard = ({ title, text, image, imageFirst }: { title: string; text: string; image: string; imageFirst: boolean }) => (
   <article className="grid grid-cols-2 items-stretch">
-    <Photo alt={title} className={`min-h-44 ${imageFirst ? "" : "order-2"}`} />
+    <Photo src={image} alt={title} className={`min-h-44 ${imageFirst ? "" : "order-2"}`} />
     <div className="flex flex-col justify-center bg-white p-5 text-xs">
       <h3 className="font-bold">{title}</h3>
       <p className="mt-2 leading-relaxed text-muted">{text}</p>

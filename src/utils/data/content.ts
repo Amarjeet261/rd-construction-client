@@ -26,10 +26,10 @@ export const loremLong =
   "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.";
 
 export const features = [
-  { title: "Quality Work", text: loremShort },
-  { title: "Trusted Worker", text: loremShort },
-  { title: "Heavy Materials", text: loremShort },
-  { title: "Expert Engineer", text: loremShort },
+  { title: "Quality Work", text: loremShort, image: "/img7.jpeg" },
+  { title: "Trusted Worker", text: loremShort, image: "/img8.jpeg" },
+  { title: "Heavy Materials", text: loremShort, image: "/img9.jpeg" },
+  { title: "Expert Engineer", text: loremShort, image: "/img10.jpeg" },
 ];
 
 export const services = [
@@ -53,13 +53,13 @@ export const projectCategories = [
 
 export type ProjectCategory = (typeof projectCategories)[number];
 
-export const projects: { id: number; title: string; category: ProjectCategory }[] = [
-  { id: 1, title: "Blueprint Planning", category: "Architecture" },
-  { id: 2, title: "Site Engineer", category: "Bridge" },
-  { id: 3, title: "City Tower", category: "Mall" },
-  { id: 4, title: "Brick Work", category: "House" },
-  { id: 5, title: "Interior Finish", category: "Flat" },
-  { id: 6, title: "Client Meeting", category: "School" },
+export const projects: { id: number; title: string; category: ProjectCategory; image: string }[] = [
+  { id: 1, title: "Blueprint Planning", category: "Architecture", image: "/img1.jpeg" },
+  { id: 2, title: "Site Engineer", category: "Bridge", image: "/img2.jpeg" },
+  { id: 3, title: "City Tower", category: "Mall", image: "/img3.jpeg" },
+  { id: 4, title: "Brick Work", category: "House", image: "/img4.jpeg" },
+  { id: 5, title: "Interior Finish", category: "Flat", image: "/img5.jpeg" },
+  { id: 6, title: "Client Meeting", category: "School", image: "/img6.jpeg" },
 ];
 
 export const team = [
@@ -70,9 +70,9 @@ export const team = [
 ];
 
 export const posts = [
-  { title: "Blog Headline", date: "21 Feb, 2015", text: loremLong },
-  { title: "Blog Headline", date: "21 Feb, 2015", text: loremLong },
-  { title: "Blog Headline", date: "21 Feb, 2015", text: loremLong },
+  { title: "Blog Headline", date: "21 Feb, 2015", text: loremLong, image: "/img11.jpeg" },
+  { title: "Blog Headline", date: "21 Feb, 2015", text: loremLong, image: "/img12.jpeg" },
+  { title: "Blog Headline", date: "21 Feb, 2015", text: loremLong, image: "/img13.jpeg" },
 ];
 
 const testimonialText =
@@ -98,3 +98,7 @@ export const tweets = [
   "Very lovely design seen: http://themeforest.net/",
   "Very lovely design seen: http://themeforest.net/",
 ];
+
+export const heroImage = "/img3.jpeg";
+export const servicesImage = "/img1.jpeg";
+export const galleryImages = [9, 10, 14, 15, 16, 2].map((n) => `/img${n}.jpeg`);

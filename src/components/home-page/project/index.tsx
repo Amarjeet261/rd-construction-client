@@ -36,7 +36,7 @@ export const PortfolioSection = () => {
           <ul className="grid grid-cols-2 gap-1 md:grid-cols-3">
             {visible.map((project) => (
               <li key={project.id} className="group relative">
-                <Photo alt={project.title} className="aspect-[4/3]" />
+                <Photo src={project.image} alt={project.title} className="aspect-[4/3]" />
                 <div className="absolute inset-0 flex items-end bg-black/50 p-3 text-xs font-bold opacity-0 transition-opacity duration-200 group-hover:opacity-100">
                   {project.title}
                 </div>

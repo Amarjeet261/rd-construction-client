@@ -8,7 +8,6 @@ import { CTASection } from "@/components/home-page/cta";
 import { HeroSection } from "@/components/home-page/hero";
 import { PortfolioSection } from "@/components/home-page/project";
 import { ServicesSection } from "@/components/home-page/services";
-import { TeamSection } from "@/components/home-page/team";
 import { TestimonialsSection } from "@/components/home-page/testimonials";
 import ContactUs from "@/components/home-page/contact";
 import WhatsApp from "@/components/home-page/whatsApp";
@@ -25,7 +24,6 @@ export default function Home() {
         <CTASection />
         <ServicesSection />
         <PortfolioSection />
-        <TeamSection />
         <BlogSection />
         <TestimonialsSection />
         <ContactUs />

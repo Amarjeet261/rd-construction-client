@@ -1,6 +1,6 @@
 import { Icon, type IconName } from "@/components/ui/Icons";
 import { Photo } from "@/components/ui/Photo";
-import { contact, footerTags, loremShort, tweets } from "@/utils/data/content";
+import { contact, footerTags, galleryImages, loremShort, tweets } from "@/utils/data/content";
 
 const followLinks: { label: string; icon: IconName; href: string; color: string }[] = [
   { label: "Instagram", icon: "instagram", href: "https://www.instagram.com/rdconstructionss", color: "text-pink-500" },
@@ -80,7 +80,7 @@ export const Footer = () => (
         <ul className="grid grid-cols-3 gap-1.5">
           {Array.from({ length: 6 }, (_, index) => (
             <li key={index}>
-              <Photo alt={`Gallery photo ${index + 1}`} className="aspect-square" />
+              <Photo src={galleryImages[index]} alt={`Gallery photo ${index + 1}`} className="aspect-square" />
             </li>
           ))}
         </ul>
@@ -93,7 +93,7 @@ export const Footer = () => (
         <Credit
           prefix="The webpage is managed by"
           name="Amarjeet Rajput"
-          href="https://www.instagram.com/amarjeetrajut261"
+          href="https://www.instagram.com/amarjeetrajput261"
         />
       </div>
     </div>
