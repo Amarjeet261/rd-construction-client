@@ -44,7 +44,6 @@ export const services = [
 export const projectCategories = [
   "All",
   "School",
-  "Bridge",
   "Architecture",
   "House",
   "Mall",
@@ -55,19 +54,12 @@ export type ProjectCategory = (typeof projectCategories)[number];
 
 export const projects: { id: number; title: string; category: ProjectCategory; image: string }[] = [
   { id: 1, title: "Blueprint Planning", category: "Architecture", image: "/img1.jpeg" },
-  { id: 2, title: "Site Engineer", category: "Bridge", image: "/img2.jpeg" },
   { id: 3, title: "City Tower", category: "Mall", image: "/img3.jpeg" },
   { id: 4, title: "Brick Work", category: "House", image: "/img4.jpeg" },
   { id: 5, title: "Interior Finish", category: "Flat", image: "/img5.jpeg" },
   { id: 6, title: "Client Meeting", category: "School", image: "/img6.jpeg" },
 ];
 
-export const team = [
-  { name: "Muhibbur Rashid", role: "CEO" },
-  { name: "Rashed Kabir", role: "Architect" },
-  { name: "Masum Rana", role: "Site Engineer" },
-  { name: "Sakib al Hasan", role: "Quality Manager" },
-];
 
 export const posts = [
   { title: "How to Choose the Right Marble", date: "21 Feb, 2025", text: marbleLong, image: "/img11.jpeg" },
@@ -96,7 +88,7 @@ export const clientLogos = [
   "HOMETASTICA",
 ];
 
-export const footerTags = ["House", "School", "Mall", "Flat", "Architecture", "Bridge", "Interior"];
+export const footerTags = ["House", "School", "Mall", "Flat", "Architecture", "Interior"];
 
 export const tweets = [
   "New arrival: Statuario white marble slabs now in stock.",
