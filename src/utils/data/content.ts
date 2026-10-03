@@ -54,6 +54,7 @@ export type ProjectCategory = (typeof projectCategories)[number];
 
 export const projects: { id: number; title: string; category: ProjectCategory; image: string }[] = [
   { id: 1, title: "Blueprint Planning", category: "Architecture", image: "/img1.jpeg" },
+  { id: 2, title: "Site Engineer", category: "Architecture", image: "/img2.jpeg" },
   { id: 3, title: "City Tower", category: "Mall", image: "/img3.jpeg" },
   { id: 4, title: "Brick Work", category: "House", image: "/img4.jpeg" },
   { id: 5, title: "Interior Finish", category: "Flat", image: "/img5.jpeg" },
