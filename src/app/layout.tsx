@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: `${siteName} | ${siteTagline}`,
     description: siteDescription,
     url: "/",
-    images: [{ url: "/rd-construction-logo.jpg", alt: siteName }],
+    images: [{ url: "/rd-construction-logo.png", alt: siteName }],
   },
   robots: { index: true, follow: true },
 };
